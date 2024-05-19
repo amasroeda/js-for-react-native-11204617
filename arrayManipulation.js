@@ -10,3 +10,14 @@ function processArray(arr) {
     }
     return finalResult;
 }
+function formatArrayStrings(strings, numbers) {
+    let resultStrings = [];
+    for (let i = 0; i < strings.length; i++) {
+        if (numbers[i] % 2 === 0) {
+            resultStrings.push(strings[i].toUpperCase());
+        } else {
+            resultStrings.push(strings[i].toLowerCase());
+        }
+    }
+    return resultStrings;
+}
